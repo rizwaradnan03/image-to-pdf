@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+#previewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.previewImage {
+    margin: 10px;
+    border: 10px solid #ccc;  /* Ukuran border diperbesar menjadi 10px */
+    padding: 10px;
+    cursor: grab;
+    transition: border-color 0.3s;
+}
+
+.previewImage img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+}
+
+.previewImage:hover {
+    border-color: #888;  /* Warna border berubah saat hover untuk menandakan bisa digeser */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
